@@ -33,8 +33,7 @@ public class DomParserDemo
 {
              Node nNode = nList.item(temp);
  
-              if(nNode.getNodeType() == Node.ELEMENT_NODE)
-{
+             
  
               Element eElement = (Element) nNode;
  
@@ -46,7 +45,7 @@ System.out.println("First Name : " +eElement.getElementsByTagName("firstname").i
 System.out.println("Last Name : "  +eElement.getElementsByTagName("lastname").item(0).getTextContent());
 System.out.println("Nick Name : "  +eElement.getElementsByTagName("nickname").item(0).getTextContent());
 System.out.println("Marks : "  +eElement.getElementsByTagName("marks").item(0).getTextContent());
-}
+
 }
                  }
        }
@@ -56,68 +55,3 @@ System.out.println("Marks : "  +eElement.getElementsByTagName("marks").item(0).g
       }
    }
 }
--------------------------------------------------------------------------
-XML:
-<?xml version="1.0"?>
-<class>
-<student rollno="1">
-  <firstname>Kanithi</firstname>
-  <lastname>Vasudha</lastname>
-  <nickname>Va</nickname>
-  <marks>100</marks>
-</student>
-<student rollno="2">
-  <firstname>Madadapu</firstname>
-  <lastname>Geetha</lastname>
-  <nickname>Ge</nickname>
-  <marks>95</marks>
-</student>
-<student rollno="3">
-  <firstname>Nalemala</firstname>
-  <lastname>Dharani</lastname>
-  <nickname>Dha</nickname>
-  <marks>90</marks>
-</student>
-<student rollno="4">
-  <firstname>Gouryshetty</firstname>
-  <lastname>Vidushee</lastname>
-  <nickname>Vi</nickname>
-  <marks>85</marks>
-</student>
-<student rollno="5">
-  <firstname>Chinnakotla</firstname>
-  <lastname>Joshna</lastname>
-  <nickname>Jo</nickname>
-  <marks>80</marks>
-</student>
-<student rollno="6">
-  <firstname>Kanithi</firstname>
-  <lastname>Himachander</lastname>
-  <nickname>Hi</nickname>
-  <marks>75</marks>
-</student>
-<student rollno="7">
-  <firstname>Madadapu</firstname>
-  <lastname>Tejaswini</lastname>
-  <nickname>Te</nickname>
-  <marks>70</marks>
-</student>
-<student rollno="8">
-  <firstname>Garipally</firstname>
-  <lastname>Vineeth</lastname>
-  <nickname>Vin</nickname>
-  <marks>65</marks>
-</student>
-<student rollno="9">
-  <firstname>Kanithi</firstname>
-  <lastname>Varshitha</lastname>
-  <nickname>Var</nickname> 
-  <marks>60</marks>
-</student>
-<student rollno="10">
-  <firstname>Potu</firstname>
-  <lastname>Vishal</lastname>
-  <nickname>Vis</nickname>
-  <marks>55</marks>
-</student>
-</class>
